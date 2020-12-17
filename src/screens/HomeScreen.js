@@ -7,11 +7,11 @@ import Paragraph from '../components/Paragraph';
 
 const HomeScreen = ({ navigation }) => (
   <Background>
-    <Logo />
+    
     <Header>Home Screen</Header>
 
     <Paragraph>
-      Login or sign up to start using this application.
+      Login or sign up to start using this telegram.
     </Paragraph>
     <Button mode="contained" onPress={() => navigation.navigate('LoginScreen')}>
       Login

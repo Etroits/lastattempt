@@ -30,9 +30,9 @@ const LoginScreen = ({ navigation }) => {
     <Background>
       <BackButton goBack={() => navigation.navigate('HomeScreen')} />
 
-      <Logo />
+     
 
-      <Header>Welcome back.</Header>
+      <Header>Welcome </Header>
 
       <TextInput
         label="Email"

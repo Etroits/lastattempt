@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "React Native Login and Register",
-    "slug": "react-native-login-register",
+    "name": "React Native telegram",
+    "slug": "react-native-telegram",
     "privacy": "public",
     "platforms": [
       "ios",
@@ -25,7 +25,10 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "Login and register to trivia"
+    "android": {
+      "package": "com.yourcompany.reactnativetelegram",
+      "versionCode": 1},
+    "description": "Login and register to telegram"
     
   }
 }

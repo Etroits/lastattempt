@@ -1,33 +1,50 @@
-import React, { memo } from 'react';
-import { StyleSheet } from 'react-native';
-import { Button as PaperButton } from 'react-native-paper';
-import { theme } from '../core/theme';
+import React from 'react';
+import { Text, TouchableOpacity } from 'react-native';
+import { scale, moderateScale } from '../Scaling';
 
-const Button = ({ mode, style, children, ...props }) => (
-  <PaperButton
-    style={[
-      styles.button,
-      mode === 'outlined' && { backgroundColor: theme.colors.surface },
-      style,
-    ]}
-    labelStyle={styles.text}
-    mode={mode}
-    {...props}
-  >
-    {children}
-  </PaperButton>
-);
 
-const styles = StyleSheet.create({
-  button: {
-    width: '100%',
-    marginVertical: 10,
+const defaultProps = {
+  style: {},
+  onPress: () => {}
+};
+
+
+const Button = ({ onPress, children, style }) => {
+  const { buttonStyle, textStyle } = styles;
+
+  return (
+    <TouchableOpacity onPress={onPress} style={[buttonStyle, style]}>
+      <Text style={textStyle}>
+        {children}
+      </Text>
+    </TouchableOpacity>
+  );
+};
+
+
+const styles = {
+  textStyle: {
+    flex: 1,
+    padding: scale(12),
+    color: '#ffffff',
+    fontSize: moderateScale(24),
+    fontWeight:'normal',
+    textAlign: 'center',
+    textShadowColor:'#000000',
+    textShadowOffset:{width: 2, height: 2},
+    textShadowRadius:0,
   },
-  text: {
-    fontWeight: 'bold',
-    fontSize: 15,
-    lineHeight: 26,
-  },
-});
+  buttonStyle: {
+    height: moderateScale(60),
+    alignSelf: 'stretch',
+    minHeight: moderateScale(32),
+    margin: scale(10),
+    backgroundColor: 'rgba(64, 64, 255, 0.8)',
+    borderRadius: 8
+  }
+};
 
-export default memo(Button);
+
+Button.defaultProps = defaultProps;
+
+export default Button;

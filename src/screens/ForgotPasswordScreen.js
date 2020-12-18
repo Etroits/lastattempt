@@ -7,7 +7,7 @@ import Logo from '../components/Logo';
 import Header from '../components/Header';
 import TextInput from '../components/TextInput';
 import { theme } from '../core/theme';
-import Button from '../components/Button';
+import Button from '../components/Buttons';
 
 const ForgotPasswordScreen = ({ navigation }) => {
   const [email, setEmail] = useState({ value: '', error: '' });

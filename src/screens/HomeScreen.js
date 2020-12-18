@@ -11,7 +11,7 @@ const HomeScreen = ({ navigation }) => (
     <Header>Home Screen</Header>
 
     <Paragraph>
-      Login or sign up to start using this telegram.
+      Login or sign up to start using this trivia game.
     </Paragraph>
     <Button mode="contained" onPress={() => navigation.navigate('LoginScreen')}>
       Login

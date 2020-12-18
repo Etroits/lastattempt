@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "React Native telegram",
-    "slug": "react-native-telegram",
+    "name": "Trivia game",
+    "slug": "trivia-game",
     "privacy": "public",
     "platforms": [
       "ios",
@@ -28,7 +28,7 @@
     "android": {
       "package": "com.yourcompany.reactnativetelegram",
       "versionCode": 1},
-    "description": "Login and register to telegram"
+    "description": " trivia attempt"
     
   }
 }

@@ -6,11 +6,11 @@ import {
   RegisterScreen,
   ForgotPasswordScreen,
   Dashboard,
-  JoinScreen,
+  
   
 
 } from './screens';
-import Intento from './screens/Intento';
+
 
 const Router = createStackNavigator(
   {
@@ -19,8 +19,8 @@ const Router = createStackNavigator(
     RegisterScreen,
     ForgotPasswordScreen,
     Dashboard,
-    JoinScreen,
-    Intento,
+    
+    
   },
   {
     initialRouteName: 'HomeScreen',

@@ -4,7 +4,7 @@ import Logo from '../components/Logo';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
-import Ap from './Ap'
+
 const Dashboard = ({ navigation }) => (
   <Background>
     <Logo />

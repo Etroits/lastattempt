@@ -1,13 +1,13 @@
 import React, { memo, useState } from 'react';
 import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
-import Background from '../components/Background';
-import Logo from '../components/Logo';
-import Header from '../components/Header';
-import Button from '../components/Buttons';
-import TextInput from '../components/TextInput';
-import BackButton from '../components/BackButton';
-import { theme } from '../core/theme';
-import { emailValidator, passwordValidator } from '../core/utils';
+import Background from '../Background';
+import Logo from '../Logo';
+import Header from '../Header';
+import Button from '../Buttons';
+import TextInput from '../TextInput';
+import BackButton from '../BackButton';
+import { theme } from '../../core/theme';
+import { emailValidator, passwordValidator } from '../../core/utils';
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState({ value: '', error: '' });

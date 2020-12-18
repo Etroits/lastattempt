@@ -22,7 +22,7 @@ const AVAILABLE_SOUNDS = {
   timeout: require('../../../assets/sounds/timeout.wav')
 };
 
-const COUNTDOWN_TIME = 5;
+const COUNTDOWN_TIME = 60;
 
 
 class TriviaGame extends React.Component {

@@ -9,8 +9,8 @@ import {
   
   
 
-} from './screens';
-
+} from './components/screens';
+import Aja from './components/screens/Aja';
 
 const Router = createStackNavigator(
   {
@@ -19,7 +19,7 @@ const Router = createStackNavigator(
     RegisterScreen,
     ForgotPasswordScreen,
     Dashboard,
-    
+    Aja
     
   },
   {

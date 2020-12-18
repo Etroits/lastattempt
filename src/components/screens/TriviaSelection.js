@@ -16,7 +16,7 @@ import { scale, moderateScale, verticalScale} from '../../Scaling';
 const SELECT_FONT = require('../../../assets/fonts/BadaboomBB_Reg.ttf');
 
 const DIFFICULTY_OPTIONS = [ "Easy", "Medium", "Hard"];
-const NUMBER_OF_QUESTIONS = ["20", "30", "40"];
+const NUMBER_OF_QUESTIONS = ["5","15", "30", "45"];
 
 
 class TriviaSelection extends React.Component {

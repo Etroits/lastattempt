@@ -48,7 +48,7 @@ class MainMenu extends React.Component {
           >
           {(this.state.fontLoaded) &&
           <View style={styles.gameTitleContainer}>
-            <Text style={styles.gameTitle}> TRIVIA QUIZ </Text>
+            <Text style={styles.gameTitle}> TRIVIA GAME </Text>
           </View>
           }
           <Button style={styles.playButton} onPress={this.props.startGameSelection}>

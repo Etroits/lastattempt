@@ -21,7 +21,7 @@ const BAD_ANIMATION = require('../../../assets/animations/823-crying.json');
 const GOOD_SOUND = require('../../../assets/sounds/gameover_good.wav');
 const AVERAGE_SOUND = require('../../../assets/sounds/gameover_average.wav');
 const BAD_SOUND = require('../../../assets/sounds/gameover_bad.wav');
-const BACKGROUND_IMAGE = require('../../../assets/images/game_background.png');
+const BACKGROUND_IMAGE = require('../../../assets/images/green_background.jpg');
 const GAMEOVER_TITLE_FONT = require('../../../assets/fonts/GrinchedRegular.otf');
 const GAMEOVER_FONT = require('../../../assets/fonts/BadaboomBB_Reg.ttf');
 
